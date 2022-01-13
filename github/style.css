@@ -1,12 +1,8 @@
-/*Mise en page générale*/
-
 .bd{
   margin-left: auto;
   margin-right: auto;
-  width: 1000px;
+  width: 80%;
 }
-
-/* Image originale */
 .bd img {
   display: block;
   object-fit: contain;
@@ -14,78 +10,44 @@
   height: 100%;
 }
 
-/*Parallax de la planche 2*/
+.planche {
+  position: relative;
+  perspective: 1px;
+  perspective-origin: 0 0;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
 
-.deux {
+.parralax-element {
   position: absolute;
   transform-style: preserve-3d;
 }
 
-.planchedeux {
-  position: relative;
+#p2 {
   height: 1080px;
-  perspective: 1px;
-  perspective-origin: 0 0;
-  overflow-x: hidden;
-  overflow-y: auto;
 }
-
-#pnj {
-  position: relative;
-  margin-bottom: 100px;
-}
-
-#arrive {
-  position: relative;
-  margin-bottom: 105px;
-  transform-origin: 0 0;
-  transform: translateZ(-0.4px) scale(1.4);
-}
-
-#verres {
-  position: relative;
-  margin-bottom: 110px;
-  transform-origin: 0 0;
-  transform: translateZ(0.6px) scale(0.4);
-}
-
-
-
-
-
-/*Parallax de la planche 10*/
-
-.dix {
-  position: absolute;
-  transform-style: preserve-3d;
-}
-
-.planchedix {
-  position: relative;
+#p10 {
   height: 870px;
-  perspective: 1px;
-  perspective-origin: 0 0;
-  overflow-x: hidden;
-  overflow-y: auto;
 }
 
-#meganar {
+.paralax-back {
+  position: relative;
+  margin-bottom: 100px;
+}
+
+.paralax-base {
   position: relative;
   margin-bottom: 105px;
   transform-origin: 0 0;
   transform: translateZ(-0.4px) scale(1.4);
 }
 
-#capitalistor {
-  position: relative;
-  margin-bottom: 100px;
-  /*transform-origin: 0 0;
-  transform: translateZ(0.2px) scale(0.8);*/
-}
-
-#cartes {
+.paralax-front {
   position: relative;
   margin-bottom: 110px;
+}
+
+.paralax-front--transform {
   transform-origin: 0 0;
   transform: translateZ(0.6px) scale(0.4);
 }
