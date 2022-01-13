@@ -1,0 +1,91 @@
+/*Mise en page générale*/
+
+.bd{
+  margin-left: auto;
+  margin-right: auto;
+  width: 1000px;
+}
+
+/* Image originale */
+.bd img {
+  display: block;
+  object-fit: contain;
+  width:  100%;
+  height: 100%;
+}
+
+/*Parallax de la planche 2*/
+
+.deux {
+  position: absolute;
+  transform-style: preserve-3d;
+}
+
+.planchedeux {
+  position: relative;
+  height: 1080px;
+  perspective: 1px;
+  perspective-origin: 0 0;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+#pnj {
+  position: relative;
+  margin-bottom: 100px;
+}
+
+#arrive {
+  position: relative;
+  margin-bottom: 105px;
+  transform-origin: 0 0;
+  transform: translateZ(-0.4px) scale(1.4);
+}
+
+#verres {
+  position: relative;
+  margin-bottom: 110px;
+  transform-origin: 0 0;
+  transform: translateZ(0.6px) scale(0.4);
+}
+
+
+
+
+
+/*Parallax de la planche 10*/
+
+.dix {
+  position: absolute;
+  transform-style: preserve-3d;
+}
+
+.planchedix {
+  position: relative;
+  height: 870px;
+  perspective: 1px;
+  perspective-origin: 0 0;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+#meganar {
+  position: relative;
+  margin-bottom: 105px;
+  transform-origin: 0 0;
+  transform: translateZ(-0.4px) scale(1.4);
+}
+
+#capitalistor {
+  position: relative;
+  margin-bottom: 100px;
+  /*transform-origin: 0 0;
+  transform: translateZ(0.2px) scale(0.8);*/
+}
+
+#cartes {
+  position: relative;
+  margin-bottom: 110px;
+  transform-origin: 0 0;
+  transform: translateZ(0.6px) scale(0.4);
+}
